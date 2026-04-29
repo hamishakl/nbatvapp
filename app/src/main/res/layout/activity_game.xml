@@ -17,4 +17,23 @@
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stream_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#CCCCCC"
+        android:textSize="18sp"
+        android:paddingTop="24dp"
+        android:text="Loading stream…" />
+
+    <TextView
+        android:id="@+id/stream_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#80E08C"
+        android:textSize="14sp"
+        android:paddingTop="12dp"
+        android:textIsSelectable="true"
+        android:visibility="gone" />
 </LinearLayout>
