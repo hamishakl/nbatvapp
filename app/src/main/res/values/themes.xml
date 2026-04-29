@@ -1,4 +1,11 @@
 <resources>
 
     <style name="Theme.NBA" parent="@style/Theme.Leanback" />
+
+    <style name="Theme.Player" parent="@style/Theme.Leanback">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 </resources>
