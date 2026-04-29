@@ -27,11 +27,15 @@ object GameScraper {
             val rawTeamsAndTime = match.groupValues[2].replace(Regex("\\s+"), " ").trim()
             val iso = match.groupValues[3].trim()
 
-            val teams = rawTeamsAndTime.substringBefore(" @ ").trim()
+            val matchup = rawTeamsAndTime.substringBefore(" @ ").trim()
+            val parts = matchup.split(" vs ", limit = 2)
+            val away = parts.getOrNull(0)?.trim().orEmpty()
+            val home = parts.getOrNull(1)?.trim().orEmpty()
             val display = formatLocalTime(iso) ?: rawTeamsAndTime.substringAfter(" @ ", "").trim()
 
             Game(
-                teams = teams,
+                awayTeam = away,
+                homeTeam = home,
                 displayTime = display,
                 isoTimestamp = iso,
                 url = BASE_URL + href

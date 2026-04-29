@@ -4,8 +4,10 @@ coreKtx = "1.10.1"
 leanback = "1.2.0"
 glide = "4.11.0"
 media3 = "1.5.1"
+viewpager2 = "1.1.0"
 
 [libraries]
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-leanback = { group = "androidx.leanback", name = "leanback", version.ref = "leanback" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }

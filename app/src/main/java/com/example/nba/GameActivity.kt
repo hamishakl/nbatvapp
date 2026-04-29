@@ -82,7 +82,6 @@ class GameActivity : FragmentActivity() {
     }
 
     companion object {
-        const val EXTRA_TEAMS = "extra_teams"
         const val EXTRA_URL = "extra_url"
         private const val USER_AGENT =
             "Mozilla/5.0 (Linux; Android 12; AndroidTV) AppleWebKit/537.36 " +
